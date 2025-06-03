@@ -1,0 +1,2 @@
+# TradingRules
+Follow and grow. 
