@@ -25,15 +25,11 @@
     <form id="tradeForm">
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" id="check1" />
-        <label class="form-check-label" for="check1">6AM - 10AM</label>
+        <label class="form-check-label" for="check1">AM - PM</label>
       </div>
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" id="check2" />
         <label class="form-check-label" for="check2">DOMAINS</label>
-      </div>
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="check3" />
-        <label class="form-check-label" for="check3">TAP INTO ZONE</label>
       </div>
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" id="check4" />
@@ -60,8 +56,8 @@
       const checked = Array.from(checkboxes).filter(cb => cb.checked);
       const message = document.getElementById('message');
 
-      if (checked.length === 6) {
-        let counter = 5;
+      if (checked.length === 5) {
+        let counter = 4;
         message.innerHTML = `🤝🏻 Congratulations, trade can be placed.<br>Redirecting in <span id="countdown">${counter}</span> seconds...`;
 
         const interval = setInterval(() => {
